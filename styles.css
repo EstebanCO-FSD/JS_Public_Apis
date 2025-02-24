@@ -107,7 +107,108 @@ body {
     box-shadow: 0 0 5px #5d7672;
 }
 
+/* Toolbar */
+
+.toolbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #282b2f;
+    padding: 10px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.toolbar h5 {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    margin-top: 8px;
+    margin-left: 8px;
+    color: white;
+}
+
+.toolbar_btns {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.toolbar .btn {
+    margin-left: 5px;
+    background: #97b1ad !important;
+}
+
+.toolbar .btn:hover {
+    background: #85998d !important;
+}
+
+.toolbar .btn:focus {
+    border-color: #cde4e1;
+    box-shadow: 0 0 5px #5d7672;
+}
+
+/* Data Container */
+
+.data-container pre {
+    color: white;
+    margin: 0;
+}
+
+pre::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 15px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+pre::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Tabla */
+
+textarea {
+    width: 400px;
+    height: 80px;
+    resize: none;
+    background: transparent;
+    color: white;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+textarea::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 /* Personalización del scroll */
+
 .right-subcontainer::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -131,16 +232,12 @@ body {
 
 /* Estilos del Sweetalert2 */
 
-.swal2-icon.swal2-info {
-    width: 30px !important;
-    height: 30px !important;
-}
-
-.swal2-icon.swal2-info::before {
-    transform: scale(0.6);
-}
-
 .btn-ok {
-    border: none; 
-    background: none;
+    color: black;
+    background: #97b1ad;
+}
+
+.btn-ok:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }

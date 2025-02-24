@@ -1,0 +1,29 @@
+{
+    "apis": [
+        {
+            "name": "Rick and Morty API",
+            "url": "https://rickandmortyapi.com/api/",
+            "resources": ["character", "episode", "location"]
+        },
+        {
+            "name": "Pokémon TCG API",
+            "url": "https://api.pokemontcg.io/v2/",
+            "resources": ["cards", "sets"]
+        },
+        {
+            "name": "JSON Placeholder API",
+            "url": "https://jsonplaceholder.typicode.com/",
+            "resources": ["posts", "photos", "users"]
+        },
+        {
+            "name": "Chucknorris API",
+            "url": "https://api.chucknorris.io/jokes/",
+            "resources": ["random"]
+        },
+        {
+            "name": "SpaceX API",
+            "url": "https://api.spacexdata.com/v4/",
+            "resources": ["rockets", "crew"]
+        }
+    ]
+}
