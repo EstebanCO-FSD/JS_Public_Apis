@@ -241,3 +241,24 @@ textarea::-webkit-scrollbar-corner {
     outline: none !important;
     box-shadow: none !important;
 }
+
+/* Responsive */
+
+@media (max-width: 985px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-container {
+        flex: 1;
+        display: flex;
+        width: 100%;
+    }
+
+    .left-subcontainer,
+    .right-subcontainer {
+        height: 500px;
+    }
+}
